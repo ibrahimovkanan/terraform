@@ -22,7 +22,8 @@ resource "aws_instance" "database" {
 
   provisioner "remote-exec" {
     inline = [
-      "sudo apt update",
+      "sudo apt update -y",
+      "sudo apt update -y",
       "sudo apt install mysql-server -y",
       "sudo sed -i 's/127.0.0.1/0.0.0.0/g' /etc/mysql/mysql.conf.d/mysqld.cnf ",
       "sudo service mysql restart",
