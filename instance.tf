@@ -10,7 +10,7 @@ resource "aws_instance" "database" {
     type     = "ssh"
     host     = self.public_ip
     user     = "ubuntu"
-    private_key = file("/home/farid/Downloads/mytestkey.pem")
+    private_key = file("mytestkey.pem")
   }
 
 
@@ -44,7 +44,7 @@ resource "aws_instance" "app" {
     type     = "ssh"
     host     = self.public_ip
     user     = "ubuntu"
-    private_key = file("/home/farid/Downloads/mytestkey.pem")
+    private_key = file("mytestkey.pem")
   }
 
 
