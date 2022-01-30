@@ -1,9 +1,13 @@
 provider "aws" {
    region = "us-east-1"
-   access_key = "AKIAQO2RQHGXRMST7FOI"
-   secret_key = "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"
 }
-
+terraform {
+   backend "s3" {
+      bucket = "terraformbucket30"  
+      key    = "gitaction/terraform.tfstate"
+      region = "us-east-1"
+   }
+}
 
 resource "aws_vpc" "main" {
   cidr_block       = "192.158.0.0/16"
