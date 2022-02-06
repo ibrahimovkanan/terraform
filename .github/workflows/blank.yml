@@ -1,4 +1,4 @@
-name: Build MYSQL and APP
+name: Terraform Pipeline
 
 on:
   push:
