@@ -1,8 +1,10 @@
 name: Terraform Pipeline
 
 on:
-  pull_request:
+  push:
     branches: [ master ]
+  pull_request:
+    branches: [ kanan ]
 
 jobs:
   terraform:
