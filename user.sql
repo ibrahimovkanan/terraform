@@ -76,7 +76,7 @@ INSERT IGNORE INTO vets VALUES (2, 'ELvin', 'Leary');
 INSERT IGNORE INTO vets VALUES (3, 'Cavad', 'Leary');
 INSERT IGNORE INTO vets VALUES (4, 'Kanan', 'Leary');
 INSERT IGNORE INTO vets VALUES (5, 'Farid', 'Stevens');
-INSERT IGNORE INTO vets VALUES (6, 'Sharon', 'Jenkins');
+INSERT IGNORE INTO vets VALUES (6, 'Ibrahimov', 'Jenkins');
 
 INSERT IGNORE INTO specialties VALUES (1, 'radiology');
 INSERT IGNORE INTO specialties VALUES (2, 'surgery');
